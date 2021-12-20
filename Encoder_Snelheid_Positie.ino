@@ -51,7 +51,6 @@
       delay (5);
      }
    }
-   
 
      //Serial.print("Pulse :");
      //Serial.println(Pulse);
@@ -59,7 +58,7 @@
    } 
    aLastState = aState; // Updates the previous state of the outputA with the current state 
    
-   if (Pulse == 65 || Pulse == 160) {
+   if (Pulse == 75 || Pulse == 175 || Pulse == 25 || Pulse == 125) {
     digitalWrite(outputPulse, HIGH);
     delay(10);
     digitalWrite(outputPulse,LOW);
